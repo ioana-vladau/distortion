@@ -5,17 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FooBar</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <progress id="people-in-queue" value="0" max="25"></progress>
+    <h1 id="brand-name">FooBar</h1>
+    <h2>// Version 1 - innerHTML with inQueue number</h2>
+    <div id="nth-customer">You are the <span id="queue-number">25</span><span class="queue-number-ending">th</span> person in Q.</div>
+
+    <h2>// Version 2 - generating images X times (X = inQueue)</h2>
     <section id="queue"></section>
-    <div id="queue-bar"></div>
-    <template class="queueTemplate">
+    <div id="total-people"></div>
+    <!-- <template class="queueTemplate">
         <article>
-            
+
         </article>
-    </template>
+    </template> -->
+    <h1>Foo.. Bar(s)</h1>
+    <h2>// Version 3 - growing div/progress bar</h2>
+    <div class="progress-bars">
+        <div id="queue-bar"></div>
+        <progress id="people-in-queue" value="0" max="25"></progress>
+    </div>
+    
+
     <script src="main.js"></script>
 </body>
 </html>
